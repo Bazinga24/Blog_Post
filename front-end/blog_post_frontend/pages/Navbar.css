@@ -1,0 +1,75 @@
+.navbar {
+  width: 100%;
+  background-color: #407bba;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 20%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.link-text {
+  font-size: 1rem;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+.link-text button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.logout-btn:hover {
+  background-color: white;
+  color: #4f46e5;
+}
+
+@media screen and (min-width: 900px) {
+  .nav-links {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-links {
+    width: 60%;
+  }
+}

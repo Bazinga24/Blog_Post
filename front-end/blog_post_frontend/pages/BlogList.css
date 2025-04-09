@@ -1,0 +1,93 @@
+.blog-list-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.blog-list-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.no-blogs {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+.blog-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.blog-card {
+  padding: 1.2rem;
+  max-width: 600px;
+  min-width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  transition: box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+}
+
+.blog-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.blog-author {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.blog-preview {
+  margin: 0.8rem 0;
+  color: #444;
+}
+
+.read-more {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.button-container button {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: rgb(87, 168, 238);
+  border: none;
+  color: white;
+}
+
+.button-container span {
+  color: black;
+  font-weight: 600;
+}
