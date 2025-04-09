@@ -16,7 +16,7 @@ const BlogDetail = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/blogs/${id}`);
+        const res = await axios.get(`https://blog-post-backend-44tv.onrender.com/api/blogs/${id}`);
         setBlog(res.data.blog);
       } catch (err) {
         console.error(err);
@@ -30,7 +30,7 @@ const BlogDetail = () => {
   const handleDelete = async () => {
     if (!window.confirm("Are you sure you want to delete this blog?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/blogs/${id}`, {
+      await axios.delete(`https://blog-post-backend-44tv.onrender.com/api/blogs/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
