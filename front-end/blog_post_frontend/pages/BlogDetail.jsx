@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import "./blogDetail.css"; // Optional
+import "./BlogDetail.css"; // Optional
 import NavBar from "../pages/NavBar";
 
 const BlogDetail = () => {
