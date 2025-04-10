@@ -19,7 +19,7 @@ const EditBlog = () => {
     // Fetch blog to pre-fill form
     const fetchBlog = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/blogs/${id}`);
+        const res = await axios.get(`https://blog-post-backend-44tv.onrender.com/api/blogs/${id}`);
         setForm({
           title: res.data.blog.title,
           content: res.data.blog.content,
@@ -40,7 +40,7 @@ const EditBlog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/api/blogs/${id}`, form, {
+      await axios.put(`https://blog-post-backend-44tv.onrender.com/api/blogs/${id}`, form, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
