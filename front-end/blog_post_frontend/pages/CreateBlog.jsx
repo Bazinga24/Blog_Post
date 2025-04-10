@@ -19,7 +19,7 @@ const CreateBlog = () => {
 
     try {
       const res = await axios.post(
-        "https://blog-post-backend-44tv.onrender.com/api/blogs",
+        "http://localhost:5000/api/blogs",
         { title, content },
         {
           headers: {

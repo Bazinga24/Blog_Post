@@ -25,7 +25,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://blog-post-backend-44tv.onrender.com/api/auth/login",
+        "http://localhost:5000/api/auth/login",
         form
       );
 
